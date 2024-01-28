@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream:Assets/Ghost_Azul.prefab
+<<<<<<< Updated upstream:Assets/Ghost_Azul.prefab
   - component: {fileID: 3653385763688999332}
   - component: {fileID: 3343669363171606001}
 =======
@@ -17,6 +18,12 @@ GameObject:
   - component: {fileID: 6829165847508870330}
   - component: {fileID: 4446359685703858461}
 >>>>>>> Stashed changes:Assets/Prefabs/Protagonist.prefab
+=======
+  - component: {fileID: 4856713212638756186}
+  - component: {fileID: 5153032167244838854}
+  - component: {fileID: 7434943355294964916}
+  - component: {fileID: 2145816358901485120}
+>>>>>>> Stashed changes:Assets/Prefabs/Bullet red.prefab
   m_Layer: 0
   m_Name: Ghost_Azul
   m_TagString: Untagged
@@ -91,12 +98,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream:Assets/Ghost_Azul.prefab
 --- !u!114 &6829165847508870330
+=======
+--- !u!114 &7434943355294964916
+>>>>>>> Stashed changes:Assets/Prefabs/Bullet red.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Ghost_Azul.prefab
   m_GameObject: {fileID: 7954850052616586590}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -106,13 +118,26 @@ MonoBehaviour:
   rb: {fileID: 4446359685703858461}
   moveSpeed: 6
 --- !u!50 &4446359685703858461
+=======
+  m_GameObject: {fileID: 5517409153073238385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c9d4af532259847a484976ff0e6f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &2145816358901485120
+>>>>>>> Stashed changes:Assets/Prefabs/Bullet red.prefab
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Ghost_Azul.prefab
   m_GameObject: {fileID: 7954850052616586590}
+=======
+  m_GameObject: {fileID: 5517409153073238385}
+>>>>>>> Stashed changes:Assets/Prefabs/Bullet red.prefab
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
