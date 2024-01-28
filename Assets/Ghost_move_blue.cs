@@ -10,7 +10,7 @@ public class Ghost_move_blue : MonoBehaviour
     private Vector2 moveDirection;
     public Rigidbody2D monsterRb;
     public float speed = 2f;
-    
+    public bool IsOnTree = false;
 
 
     void movemment ()
@@ -20,13 +20,18 @@ public class Ghost_move_blue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         moveDirection =  new Vector2(0,-1);
     }
 
     // Update is called once per frame
     void Update()
     {
-        movemment();
+        if (!IsOnTree)
+        {
+            movemment();
+        }
+        
     }
     
     

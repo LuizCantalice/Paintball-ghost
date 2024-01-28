@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2427785642126138147}
   - component: {fileID: -6467391547969327850}
   - component: {fileID: 735270638488509044}
+  - component: {fileID: -5258040326320046838}
   m_Layer: 0
   m_Name: Protagonist
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,3 +128,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5258040326320046838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954850052616586590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00609880e3cde54ab36feb6d23c5bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 735270638488509044}
+  bulletPrefabRed: {fileID: 5517409153073238385, guid: 361fb513299ebf6429c6215150c846d8, type: 3}
+  firePoint: {fileID: 7813451548051782424}
+  fireForce: 20
