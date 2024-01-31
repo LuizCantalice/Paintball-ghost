@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 1754322927425308660}
   - component: {fileID: -1523248305924421724}
   - component: {fileID: -7851295992367766357}
-  - component: {fileID: -8166444781923333690}
   - component: {fileID: 9001033254878431970}
   - component: {fileID: 7632382728879619830}
   - component: {fileID: 1009682449603713147}
+  - component: {fileID: 900419427269414350}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -103,8 +103,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.2
+  m_AngularDrag: 0.2
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -116,27 +116,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-8166444781923333690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592948397328533197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c00609880e3cde54ab36feb6d23c5bba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: -7851295992367766357}
-  bulletPrefabRed: {fileID: 5517409153073238385, guid: 361fb513299ebf6429c6215150c846d8, type: 3}
-  bulletPrefabGreen: {fileID: 4047701401478318388, guid: e3a1c398714eb1b4a996800be163fd83, type: 3}
-  bulletPrefabBlue: {fileID: 6991157321601437723, guid: 6f9d61adf1b795540be248a42d98c4fc, type: 3}
-  firePoint: {fileID: 8757546273473592078}
-  fireForce: 20
-  i: 0
-  ammo: 720067006200720067006200
+  m_Constraints: 4
 --- !u!60 &9001033254878431970
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -251,6 +231,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ffa5b38f4a04e744a773cd96c01a8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrLifes: -12
+  MaxLifes: 3
+--- !u!114 &900419427269414350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592948397328533197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b62be06656b050040a11dd4b118184b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: -7851295992367766357}
+  bulletPrefabRed: {fileID: 5517409153073238385, guid: 361fb513299ebf6429c6215150c846d8, type: 3}
+  bulletPrefabGreen: {fileID: 4047701401478318388, guid: e3a1c398714eb1b4a996800be163fd83, type: 3}
+  bulletPrefabBlue: {fileID: 6991157321601437723, guid: 6f9d61adf1b795540be248a42d98c4fc, type: 3}
+  firePoint: {fileID: 8757546273473592078}
+  fireForce: 20
+  cor: 49
+  ammo:
+    Slot: 
+    top: 0
+    Max: 0
 --- !u!1 &5582618774996334943
 GameObject:
   m_ObjectHideFlags: 0

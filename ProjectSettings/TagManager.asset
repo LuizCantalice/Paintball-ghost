@@ -8,11 +8,12 @@ TagManager:
   - Azul
   - Verde
   - "ch\xE3o"
+  - Morte
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Objetos
   - Water
   - UI
   - 
