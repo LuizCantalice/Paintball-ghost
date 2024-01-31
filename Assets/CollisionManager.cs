@@ -2,24 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class CollisionManager : MonoBehaviour
 {
-    public int vidas;
-    public PolygonCollider2D pc;
-    // Start is called before the first frame update
-    void Start()
+    public  Life life;
+void OnCollisionEnter2D(Collision2D collision)
     {
-        
-    }
+        string titulo = collision.gameObject.tag;
+        if(gameObject.CompareTag(titulo)){
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*if (Colisao){
-            vidas--
-            moreu(fantasma)
-        }*/
-
+        if(titulo == "chão"){
+            Destroy(gameObject);
+        }
         
+        if(titulo == "Player"){
+            Destroy(gameObject);
+            life.DecreaseLife();
+        }
+
     }
 }
+
+ 
