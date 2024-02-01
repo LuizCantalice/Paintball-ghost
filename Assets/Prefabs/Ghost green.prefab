@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6123186033020421084}
   - component: {fileID: 9099077239793913618}
   - component: {fileID: -7704814548025022143}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ghost green
   m_TagString: Verde
   m_Icon: {fileID: 0}

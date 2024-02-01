@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BinaryTree : MonoBehaviour
 {
-    class Node
+    public class Node
     {
         public Node LeftNode { get; set; }
         public Node RightNode { get; set; }
@@ -13,7 +13,7 @@ public class BinaryTree : MonoBehaviour
 
 
           
-    class BT
+    public class BT
     {
         public Node Root { get; set; }
 

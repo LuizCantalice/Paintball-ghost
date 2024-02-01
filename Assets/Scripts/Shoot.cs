@@ -17,6 +17,7 @@ public class Shoot : MonoBehaviour
     public char cor;
     public MinhaPilha ammo;
     public Canvas canvas;
+    public bool IsOnMenu = false;
     
     void Atirar()
     { 
@@ -42,29 +43,31 @@ public class Shoot : MonoBehaviour
     {
         Debug.Log("inferno");
         ammo = new MinhaPilha(6);
-        ammo.push('r');
-        ammo.push('g');
-        ammo.push('b');
-        ammo.push('r');
-        ammo.push('g');
-        ammo.push('b');
+        RecarregaVermelho();
+        RecarregaVerde();
+        RecarregaAzul();
+        RecarregaVermelho();
+        RecarregaVerde();
+        RecarregaAzul();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && !(IsOnMenu))
         {
             Atirar();
         }
         if(Input.GetKeyDown(KeyCode.R)){
+            IsOnMenu = true;
             canvas.gameObject.SetActive(!canvas.gameObject.activeSelf);
-            /*if(canvas.gameObject.activeSelf){
+            if(canvas.gameObject.activeSelf){
                 Time.timeScale = 0.01f;
             }
             else{
                 Time.timeScale = 1f;
-            }*/
+                IsOnMenu = false;
+            }
         }
 
     }

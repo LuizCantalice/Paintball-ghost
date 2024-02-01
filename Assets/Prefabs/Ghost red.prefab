@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8547548343001156785}
   - component: {fileID: 7926833236000820540}
   - component: {fileID: -436464192644609677}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ghost red
   m_TagString: Vermelho
   m_Icon: {fileID: 0}

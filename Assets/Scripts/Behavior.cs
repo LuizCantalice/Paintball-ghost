@@ -9,14 +9,17 @@ public class Behavior : MonoBehaviour
 
     public GameObject Attack;
     public int lifes = 3;
-    public float time = 2f;
+    public float time = 10f;
     public Transform attackPos;
+    public Life life;
+    public bool invincible = false;
     
     // Start is called before the first frame update
-    /*void Start()
+    void Start()
     {
-        
-    }*/
+        arvore.geraArvore(lifes);
+           
+    }
 
 
     // Update is called once per frame
@@ -27,24 +30,29 @@ public class Behavior : MonoBehaviour
         }
         else{
             BossAttack();
-            time = 2f;
+            time = 15f;
             arvore.geraArvore(lifes);
+        }
+        if(lifes == 2){
+            transform.gameObject.tag = "Azul";
+        }
+
+        if(lifes == 1){
+            transform.gameObject.tag = "Vermelho";
         }
         
     }
 
-    public LayerMask whatIsToDamage;
-    void BossAttack(){
-        Collider2D[] cols = Physics2D.OverlapCircleAll(Vector2.one, 10f, whatIsToDamage);
-
-        foreach(Collider2D col in cols){
-            if(col.CompareTag("Player")){
-                //col.GetComponent<Life>.DecreaseLife();
-            }
-            else{
-                Destroy(col.gameObject);
-            }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        string cor = collision.gameObject.tag;
+        if(gameObject.CompareTag(cor)){
+            lifes--;
         }
-         
+    }
+
+    
+    void BossAttack(){
+       
     }
 }
