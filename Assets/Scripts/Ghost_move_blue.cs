@@ -11,6 +11,7 @@ public class Ghost_move_blue : MonoBehaviour
     public Rigidbody2D monsterRb;
     public float speed = 2f;
     public bool IsOnTree = false;
+    public int index;
 
 
     void movemment ()

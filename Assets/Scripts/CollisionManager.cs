@@ -13,16 +13,20 @@ void OnCollisionEnter2D(Collision2D collision)
         if(gameObject.CompareTag(titulo)){
             Destroy(collision.gameObject);
             Destroy(gameObject);
+            gameObject.GetComponent<Ghost_move_blue>().IsOnTree = false;
         }
 
         if(titulo == "Morte"){
             Destroy(gameObject);
+            gameObject.GetComponent<Ghost_move_blue>().IsOnTree = false;
+
         }
         
         if(titulo == "Player"){
             //life.DecreaseLife();
             collision.gameObject.GetComponent<Life>().DecreaseLife();
             Destroy(gameObject);
+            gameObject.GetComponent<Ghost_move_blue>().IsOnTree = false;
         }
 
     }
