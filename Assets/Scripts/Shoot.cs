@@ -69,10 +69,10 @@ public class Shoot : MonoBehaviour
                 IsOnMenu = false;
             }
         }
-
     }
 
     public void RecarregaVermelho(){
+        
         ammo.push('r');
     }
 

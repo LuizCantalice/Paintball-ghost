@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3865741303055403256}
   - component: {fileID: 4836843162572051937}
-  - component: {fileID: 1511732217579893557}
   - component: {fileID: 4105402693626365175}
   - component: {fileID: 2012108199769619975}
+  - component: {fileID: 3901695335034678226}
   m_Layer: 0
   m_Name: Bullet blue
   m_TagString: Azul
@@ -87,18 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1511732217579893557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6991157321601437723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7c9d4af532259847a484976ff0e6f74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &4105402693626365175
 Rigidbody2D:
   serializedVersion: 4
@@ -161,3 +149,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.2
+--- !u!114 &3901695335034678226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991157321601437723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c9d4af532259847a484976ff0e6f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

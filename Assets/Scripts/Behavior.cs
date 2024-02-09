@@ -7,12 +7,11 @@ public class Behavior : MonoBehaviour
 {
     public GerarÁrvore arvore;
 
-    public GameObject Attack;
+    public GameObject AttackPrefab;
     public int lifes = 3;
     public float time = 10f;
     public Transform attackPos;
-    public Life life;
-    public bool invincible = false;
+    public bool invincible = true;
     
     // Start is called before the first frame update
     void Start()
@@ -29,7 +28,7 @@ public class Behavior : MonoBehaviour
             time -= Time.deltaTime;
         }
         else{
-            BossAttack();
+            //BossAttack();
             time = 15f;
             arvore.geraArvore(lifes);
         }
@@ -39,6 +38,10 @@ public class Behavior : MonoBehaviour
 
         if(lifes == 1){
             transform.gameObject.tag = "Vermelho";
+            invincible = false;
+        }
+        if(lifes == 0){
+            Destroy(gameObject);
         }
         
     }
@@ -53,6 +56,6 @@ public class Behavior : MonoBehaviour
 
     
     void BossAttack(){
-       
+        GameObject Attack = Instantiate(AttackPrefab, attackPos.position, attackPos.rotation);
     }
 }

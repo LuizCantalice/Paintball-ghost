@@ -8,8 +8,6 @@ using static Ghost_move_blue;
 
 public class GerarÁrvore : MonoBehaviour
 {
-    public BinaryTree tree;
-    public Behavior behavior;
     public GameObject GhostPrefabBlue;
     public GameObject GhostPrefabRed;
     public GameObject GhostPrefabGreen;
@@ -19,15 +17,11 @@ public class GerarÁrvore : MonoBehaviour
 
     public GameObject[] inimigos;
 
-    public GameObject[] Reds;
-    public GameObject[] Greens;
-    public GameObject[] Blues;
     
     
     // Start is called before the first frame update
     void Start()
     {
-        
         for (int i = 0; i < 7; i++)
         {
             arvore[i] = Random.Range(0,3);
@@ -39,15 +33,16 @@ public class GerarÁrvore : MonoBehaviour
     void Update(){
         for (int i = 0; i < 7; i++)
         {
-            parentIsDead(inimigos[i]);
+            parentIsDead(inimigos, i);
         }
         
     }
 
-    public bool parentIsDead(GameObject gameObject){
-        if ()
+    public void parentIsDead(GameObject[] fantasmas, int n){
+        int parent = (n-1)/2;
+        if (!fantasmas[parent].GetComponent<Ghost_move_blue>().IsOnTree == true)
         {
-            
+            fantasmas[n].GetComponent<Ghost_move_blue>().IsOnTree = false;
         }
     }
 
